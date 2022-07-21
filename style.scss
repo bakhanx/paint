@@ -1,9 +1,23 @@
-canvas{
-    border:5px solid black;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
 }
 
-body{
+.Wrapper-canvas{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: auto;
     align-items: center;
+    justify-content: center;
+    canvas{
+        border:5px solid black;
+    }
+    input{
+        padding:30px;
+    }
 }
+
+
+
