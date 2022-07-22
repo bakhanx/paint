@@ -9,8 +9,77 @@
   </head>
   <body>
     <div class="Wrapper-canvas">
+      <h1>Painting</h1>
       <canvas></canvas>
-      <input id="line-width" type="range" min="1" max="10" value="3" step="0.5" />
+      <h1 id="mode-name">Mode : Draw</h1>
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="3"
+        step="0.5"
+      />
+      <input id="color" type="color" />
+
+      <div id="color-options">
+        <span
+          class="color-option"
+          style="background-color: #55efc4"
+          data-color="#55efc4"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #81ecec"
+          data-color="#81ecec"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #74b9ff"
+          data-color="#74b9ff"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #a29bfe"
+          data-color="#a29bfe"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #dfe6e9"
+          data-color="#dfe6e9"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #fdcb6e"
+          data-color="#fdcb6e"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #e17055"
+          data-color="#e17055"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #d63031"
+          data-color="#d63031"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #e84393"
+          data-color="#e84393"
+        ></span>
+        <span
+          class="color-option"
+          style="background-color: #2d3436"
+          data-color="#2d3436"
+        ></span>
+      </div>
+
+      <div id="buttons">
+        <button id="fill-btn">Fill</button>
+        <button id="clear-btn">Clear</button>
+        <button id="eraser-btn">Eraser</button>
+      </div>
     </div>
 
     <script src="app.js"></script>
