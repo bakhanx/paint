@@ -3,7 +3,11 @@
 }
 body {
   margin: 0;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(243, 243, 243);
+}
+
+h2{
+    margin:10px;
 }
 
 .Wrapper-canvas {
@@ -13,17 +17,17 @@ body {
   align-items: center;
   justify-content: center;
   canvas {
-    border: 5px solid black;
-    margin-top: 30px;
+    border: none;
     background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(220, 220, 220);
   }
   input {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
 #color-options {
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
 }
 
@@ -62,7 +66,7 @@ body {
 }
 
 #buttons {
-  margin-top: 20px;
+  margin-top: 15px;
   button {
     @include my-button(rgb(165, 38, 200));
   }
